@@ -5,20 +5,21 @@
 
 cd `dirname $0`
 
-REPO=virtuald
+REPO=virtuald/nsq
+VERSION=0.2.29
 
 pushd base 
-docker build -t $REPO/nsq-base .
+docker build -t $REPO:base-$VERSION .
 popd
 
 pushd nsqd
-docker build -t $REPO/nsqd .
+docker build -t $REPO:nsqd-$VERSION .
 popd
 
 pushd nsqlookupd
-docker build -t $REPO/nsqlookupd .
+docker build -t $REPO:nsqlookupd-$VERSION .
 popd
 
 pushd nsqadmin
-docker build -t $REPO/nsqadmin .
+docker build -t $REPO:nsqadmin-$VERSION .
 popd

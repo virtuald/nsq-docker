@@ -1,4 +1,4 @@
-FROM virtuald/nsq-base
+FROM virtuald/nsq:base_0.2.29
 
 EXPOSE 4160
 EXPOSE 4161
