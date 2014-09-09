@@ -13,4 +13,4 @@ if [ "$NSQLOOKUPD_PORT" != "" ]; then
     LOOKUPD_ARGS=-lookupd-http-address=$LOOKUPD_IP:4161
 fi
 
-exec /usr/bin/nsqadmin $LOOKUPD_ARGS $@
+exec /usr/bin/nsqadmin $LOOKUPD_ARGS "$@"
