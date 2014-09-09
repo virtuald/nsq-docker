@@ -13,7 +13,7 @@ Start up a single host NSQ cluster only accessible from the docker host:
     docker run -d --name nsqd --link nsqlookupd:nsqlookupd virtuald/nsq:nsqd-0.2.31-1 -broadcast-address '$HOSTNAME'
     docker run -d --name nsqadmin --link nsqlookupd:nsqlookupd virtuald/nsq:nsqadmin-0.2.31-1 
 
-Note that this cluster cannot be talked to from the outside world. If you want
-to do that, then you need to use -p to publsh all the ports, and set
-the broadcast address to the docker host address. 
+Note that in this configuration, this cluster cannot be talked to from the
+outside world. If you want to do that, then you need to use -p to publsh all
+the ports, and set the broadcast address to the docker host address.
 
