@@ -1,4 +1,4 @@
-FROM virtuald/nsq:base-0.2.31
+FROM virtuald/nsq:base-0.3.0
 
 ADD /nsqadmin.sh /usr/bin/nsqadmin.sh
 
