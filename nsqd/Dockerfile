@@ -1,4 +1,4 @@
-FROM virtuald/nsq:base-0.3.0
+FROM virtuald/nsq:base-0.3.1
 
 ADD /nsqd.sh /usr/bin/nsqd.sh
 
