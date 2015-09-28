@@ -1,4 +1,4 @@
-FROM virtuald/nsq:base-0.3.1
+FROM virtuald/nsq:base-0.3.6
 
 ADD /nsqlookupd.sh /usr/bin/nsqlookupd.sh
 
