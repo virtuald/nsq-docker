@@ -9,9 +9,9 @@ Usage
 
 Start up a single host NSQ cluster only accessible from the docker host:
 
-    docker run -d --name nsqlookupd virtuald/nsq:nsqlookupd-0.3.7 -broadcast-address '$HOSTNAME'
-    docker run -d --name nsqd --link nsqlookupd:nsqlookupd virtuald/nsq:nsqd-0.3.7 -broadcast-address '$HOSTNAME'
-    docker run -d --name nsqadmin --link nsqlookupd:nsqlookupd virtuald/nsq:nsqadmin-0.3.7
+    docker run -d --name nsqlookupd virtuald/nsq:nsqlookupd-0.3.8 -broadcast-address '$HOSTNAME'
+    docker run -d --name nsqd --link nsqlookupd:nsqlookupd virtuald/nsq:nsqd-0.3.8 -broadcast-address '$HOSTNAME'
+    docker run -d --name nsqadmin --link nsqlookupd:nsqlookupd virtuald/nsq:nsqadmin-0.3.8
 
 Note that in this configuration, this cluster cannot be talked to from the
 outside world. If you want to do that, then you need to use -p to publsh all
